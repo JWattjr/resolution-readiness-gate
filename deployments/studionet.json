@@ -4,6 +4,7 @@
   "chain_id": 61999,
   "deployer": "0x2C8EB5dB1105A85BE66BadafeD88D10cF393CDD8",
   "source_file": "contracts/ResolutionReadinessGate.py",
+  "source_commit": "58855ec2cc18ff95ca4f65e627a9e287adff8dda",
   "contract_address": "0x76A7141d99e5abbDB737BFE672001F429bF654B7",
   "deployment_transaction": "0x786d891a1371cb606a0f8376ac8b6fa7ec06279afb8b053c48bf6a70299f2556",
   "explorer_url": "https://explorer-studio.genlayer.com/address/0x76A7141d99e5abbDB737BFE672001F429bF654B7",

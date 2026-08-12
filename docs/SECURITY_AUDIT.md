@@ -2,7 +2,7 @@
 
 Audit date: 2026-08-12
 Scope: `contracts/ResolutionReadinessGate.py`
-Method: manual review, full GenVM lint and pinned-runner schema validation, direct-mode adversarial tests, explicit independent-validator execution, and finalized StudioNet receipt/state inspection.
+Method: manual review, full GenVM lint and pinned-runner schema validation, direct-mode adversarial tests, explicit independent-validator execution, and finalized StudioNet/Bradbury receipt and state inspection.
 
 ## Result
 
@@ -23,7 +23,9 @@ No unresolved critical or high-severity code issue was found after remediation. 
 - Direct tests exercise lifecycle, failure, and independent-validator paths.
 - AST regression proves nondeterministic closures do not reference `self`.
 - StudioNet deployment and consensus transaction are finalized with successful leader execution; exact evidence is in `deployments/studionet.json`.
-- Bradbury is accepted only after successful execution and state reads, then finalized independently.
+- Bradbury deployment and smoke-write receipts are finalized after successful execution and state reads; exact evidence is in `deployments/bradbury.json`.
+
+Bradbury finalized smoke assessment reached `AGREE` after two rotations with three `AGREE`, one timeout, and one deterministic-violation vote; the transaction executed `FINISHED_WITH_RETURN` and stored `READY`. Receipt stderr was empty.
 
 ## Residual risk
 

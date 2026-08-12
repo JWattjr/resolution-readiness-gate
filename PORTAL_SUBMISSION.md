@@ -6,7 +6,7 @@
 
 ## Notes / Description
 
-Built and deployed an MIT-licensed Resolution Readiness Gate that prevents prediction markets from resolving prematurely or being delayed indefinitely. Deployment freezes required criteria, official HTTPS sources, cutoff, maximum wait, and spec ID. Validators independently extract criterion statuses, evidence finality, conflicts/cancellation, coverage, and an official date; the LLM does not choose the gate decision. Deterministic code derives WAIT, READY, VOID, or CONTESTED, and READY can be consumed once by the owner. Before-cutoff assessment stays WAIT, all-source outage fails closed, and max-wait becomes terminal VOID. Includes pinned GenVM source, adversarial decision tests, full schema validation, audit, test matrix, and finalized StudioNet READY consensus evidence. It does not execute payouts.
+Built and deployed an MIT-licensed Resolution Readiness Gate that prevents prediction markets from resolving prematurely or being delayed indefinitely. Deployment freezes required criteria, official HTTPS sources, cutoff, maximum wait, and spec ID. Validators independently extract criterion statuses, evidence finality, conflicts/cancellation, coverage, and an official date; the LLM does not choose the gate decision. Deterministic code derives WAIT, READY, VOID, or CONTESTED, and READY can be consumed once by the owner. Before-cutoff assessment stays WAIT, all-source outage fails closed, and max-wait becomes terminal VOID. Includes pinned GenVM source, adversarial decision tests, full schema validation, audit, test matrix, and finalized StudioNet/Bradbury READY consensus evidence. It does not execute payouts.
 
 ## Evidence to add
 
