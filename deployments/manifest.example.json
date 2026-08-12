@@ -1,0 +1,21 @@
+{
+  "contract": "ResolutionReadinessGate",
+  "source_file": "contracts/ResolutionReadinessGate.py",
+  "source_commit": "REPLACE_WITH_GIT_COMMIT",
+  "network": "testnet-bradbury",
+  "chain_id": 4221,
+  "contract_address": "REPLACE_WITH_ADDRESS",
+  "deployment_transaction": "REPLACE_WITH_TX_HASH",
+  "explorer_url": "https://explorer-bradbury.genlayer.com/address/REPLACE_WITH_ADDRESS",
+  "constructor_args": [
+    "pl117-58-readiness",
+    "The final official legal status of H.R. 3684 in the 117th Congress",
+    "[{\"id\":\"law_number\",\"text\":\"The official record assigns Public Law 117-58.\"},{\"id\":\"approval_date\",\"text\":\"The official record supplies a final approval date.\"}]",
+    "[\"https://www.govinfo.gov/app/details/PLAW-117publ58/summary\"]",
+    "2026-01-01T00:00:00Z",
+    "2030-01-01T00:00:00Z",
+    "readiness-gate-pl117-58-v1"
+  ],
+  "runner": "py-genlayer:1jb45aa8ynh2a9c9xn3b7qqh8sm5q93hwfp7jqmwsfhh8jpz09h6",
+  "deployed_at_utc": "REPLACE_WITH_ISO_TIMESTAMP"
+}
