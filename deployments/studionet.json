@@ -1,47 +1,282 @@
 {
+  "manifest_version": 2,
+  "historical": false,
   "contract": "ResolutionReadinessGate",
   "network": "studionet",
   "chain_id": 61999,
-  "deployer": "0x2C8EB5dB1105A85BE66BadafeD88D10cF393CDD8",
+  "deployer_account": "moment-grid-studionet",
+  "deployer": "0xdB433ff614bDD1ecE21Aa97221C3E0a7ecf79c92",
   "source_file": "contracts/ResolutionReadinessGate.py",
-  "source_commit": "58855ec2cc18ff95ca4f65e627a9e287adff8dda",
-  "contract_address": "0x76A7141d99e5abbDB737BFE672001F429bF654B7",
-  "deployment_transaction": "0x786d891a1371cb606a0f8376ac8b6fa7ec06279afb8b053c48bf6a70299f2556",
-  "explorer_url": "https://explorer-studio.genlayer.com/address/0x76A7141d99e5abbDB737BFE672001F429bF654B7",
+  "source_commit": "ae1916cd447d2e9f8ed6e4f29e2107bec3fce40f",
   "runner": "py-genlayer:1jb45aa8ynh2a9c9xn3b7qqh8sm5q93hwfp7jqmwsfhh8jpz09h6",
+  "gate_address": "0xa8Be5185b1fa8F4aE2CadF924A5F5dBCD429fBb5",
+  "contract_address": "0xa8Be5185b1fa8F4aE2CadF924A5F5dBCD429fBb5",
+  "explorer_url": "https://explorer-studio.genlayer.com/contracts/0xa8Be5185b1fa8F4aE2CadF924A5F5dBCD429fBb5",
+  "deployment_explorer_url": "https://explorer-studio.genlayer.com/transactions/0x4c2cac2a4bf8ea624e57b75b6527c9f9d6247033b0ea0c55bf2a63ada83e57e4",
+  "deployment_transaction": "0x4c2cac2a4bf8ea624e57b75b6527c9f9d6247033b0ea0c55bf2a63ada83e57e4",
+  "deployed_at_utc": "2026-09-14T12:19:56.847756+00:00",
   "constructor_args": [
-    "pl117-58-readiness",
+    "pl117-58-readiness-v2",
     "The final official legal status of H.R. 3684 in the 117th Congress",
     "[{\"id\":\"law_number\",\"text\":\"The official record assigns Public Law 117-58.\"},{\"id\":\"approval_date\",\"text\":\"The official record supplies a final approval date.\"}]",
     "[\"https://www.govinfo.gov/app/details/PLAW-117publ58/summary\"]",
-    "2026-01-01T00:00:00Z",
-    "2030-01-01T00:00:00Z",
-    "readiness-gate-pl117-58-v1"
+    "2026-09-01T00:00:00Z",
+    "2027-01-01T00:00:00Z",
+    "2026-12-01T00:00:00Z",
+    "readiness-gate-pl117-58-v2",
+    "06567a2138973c3caf4ffe16f363ce63497db9143a31a47fd75b6f4cc043d45e",
+    "settle-market-pl117-58-demo",
+    "cc988093ac001cbbbb08731880b59aeed72f781b0a25311b60c49ce05a38ba4a"
   ],
-  "scenario_revision": 1,
   "deployment_status": "FINALIZED",
   "deployment_execution": "SUCCESS",
+  "deployment_consensus_result": "MAJORITY_AGREE",
+  "deployment_validator_votes": [
+    "AGREE",
+    "AGREE",
+    "AGREE",
+    "AGREE",
+    "AGREE"
+  ],
+  "deployment_finality_verified": true,
+  "deployment_execution_verified": true,
   "schema_verified": true,
-  "state_verified": true,
-  "finalized_verified": true,
-  "consensus_test_transaction": "0xd3403615a643cea5a06a679630002ed8001b45cee1fbe61f7a505d51f7947981",
-  "consensus_test_status": "FINALIZED",
-  "consensus_test_execution": "SUCCESS",
-  "consensus_test_state": {
-    "attempts": 1,
-    "criterion_vector": "[\"SATISFIED\",\"SATISFIED\"]",
-    "cutoff": "2026-01-01T00:00:00+00:00",
+  "source_identity": {
+    "verified": true,
+    "method": "gen_getContractCode base64 decoded and compared byte-for-byte with the checked-out source",
+    "gate_sha256": "fbd6d8267b15a95231ef6b26f87d4c4a7fb242ad9b3dbd3bee6f34d679046b53",
+    "consumer_sha256": "ba45d49591f207d6e33439476f9dd3b1384e046b20af04fc2944b5b89c94325f",
+    "gate_local_sha256": "fbd6d8267b15a95231ef6b26f87d4c4a7fb242ad9b3dbd3bee6f34d679046b53",
+    "consumer_local_sha256": "ba45d49591f207d6e33439476f9dd3b1384e046b20af04fc2944b5b89c94325f",
+    "bytecode_identity_verified": false
+  },
+  "consumer": {
+    "contract": "ResolutionReadinessConsumer",
+    "source_file": "contracts/ResolutionReadinessConsumer.py",
+    "contract_address": "0x2394879de943F3E89BD18d9e48991cD543786954",
+    "explorer_url": "https://explorer-studio.genlayer.com/contracts/0x2394879de943F3E89BD18d9e48991cD543786954",
+    "deployment_transaction": "0x3ba626a89e1a207caa5d7ca40333e03b9f3522be56c85b427479331b49201ab8",
+    "deployment_explorer_url": "https://explorer-studio.genlayer.com/transactions/0x3ba626a89e1a207caa5d7ca40333e03b9f3522be56c85b427479331b49201ab8",
+    "deployed_at_utc": "2026-09-14T12:20:48.738814+00:00",
+    "constructor_args": [
+      "pl117-58-consumer-v2",
+      "0xa8Be5185b1fa8F4aE2CadF924A5F5dBCD429fBb5",
+      "readiness-gate-pl117-58-v2",
+      "06567a2138973c3caf4ffe16f363ce63497db9143a31a47fd75b6f4cc043d45e",
+      "settle-market-pl117-58-demo",
+      "cc988093ac001cbbbb08731880b59aeed72f781b0a25311b60c49ce05a38ba4a"
+    ],
+    "deployment_status": "FINALIZED",
+    "deployment_execution": "SUCCESS",
+    "deployment_consensus_result": "MAJORITY_AGREE",
+    "deployment_validator_votes": [
+      "AGREE",
+      "AGREE",
+      "AGREE",
+      "IDLE",
+      "IDLE"
+    ],
+    "deployment_finality_verified": true,
+    "deployment_execution_verified": true
+  },
+  "frozen_specification": {
+    "gate_id": "pl117-58-readiness-v2",
     "event_description": "The final official legal status of H.R. 3684 in the 117th Congress",
-    "gate_id": "pl117-58-readiness",
-    "last_assessed_at": "2026-08-12T21:13:39.465935Z",
-    "last_result": "{\"criterion_vector\":[\"SATISFIED\",\"SATISFIED\"],\"decision\":\"READY\",\"official_event_time\":\"2021-11-15\",\"reason_code\":\"EVIDENCE_FINAL\",\"source_coverage\":1}",
-    "max_wait": "2030-01-01T00:00:00+00:00",
-    "official_event_time": "2021-11-15",
-    "ready_consumed": false,
-    "reason_code": "EVIDENCE_FINAL",
-    "source_count": 1,
+    "criteria": [
+      {
+        "id": "approval_date",
+        "text": "The official record supplies a final approval date."
+      },
+      {
+        "id": "law_number",
+        "text": "The official record assigns Public Law 117-58."
+      }
+    ],
+    "source_urls": [
+      "https://www.govinfo.gov/app/details/PLAW-117publ58/summary"
+    ],
+    "cutoff_iso": "2026-09-01T00:00:00Z",
+    "readiness_expiry_iso": "2026-12-01T00:00:00Z",
+    "max_wait_iso": "2027-01-01T00:00:00Z",
+    "spec_id": "readiness-gate-pl117-58-v2",
+    "spec_hash": "06567a2138973c3caf4ffe16f363ce63497db9143a31a47fd75b6f4cc043d45e",
+    "action_id": "settle-market-pl117-58-demo",
+    "action_digest": "cc988093ac001cbbbb08731880b59aeed72f781b0a25311b60c49ce05a38ba4a"
+  },
+  "bind_consumer_transaction": "0xa9fc9682b47b7e8b8dd92c9b1fda0ae1e1c3e689026b04c2a6150a552325b489",
+  "bind_consumer_explorer_url": "https://explorer-studio.genlayer.com/transactions/0xa9fc9682b47b7e8b8dd92c9b1fda0ae1e1c3e689026b04c2a6150a552325b489",
+  "bind_consumer_status": "FINALIZED",
+  "bind_consumer_execution": "SUCCESS",
+  "bind_consumer_consensus_result": "MAJORITY_AGREE",
+  "bind_consumer_validator_votes": [
+    "AGREE",
+    "AGREE",
+    "AGREE",
+    "IDLE",
+    "IDLE"
+  ],
+  "consumer_address": "0x2394879de943F3E89BD18d9e48991cD543786954",
+  "assessment_transaction": "0x0911ef9df300b6b1041b2c33c5711d9fcc4e86667cfde94fb52f841106b2abc3",
+  "assessment_explorer_url": "https://explorer-studio.genlayer.com/transactions/0x0911ef9df300b6b1041b2c33c5711d9fcc4e86667cfde94fb52f841106b2abc3",
+  "consensus_test_transaction": "0x0911ef9df300b6b1041b2c33c5711d9fcc4e86667cfde94fb52f841106b2abc3",
+  "assessment_status": "FINALIZED",
+  "assessment_execution": "SUCCESS",
+  "assessment_consensus_result": "MAJORITY_AGREE",
+  "assessment_validator_votes": [
+    "AGREE",
+    "AGREE",
+    "AGREE",
+    "IDLE",
+    "IDLE"
+  ],
+  "assessment_finality_verified": true,
+  "assessment_execution_verified": true,
+  "assessment_result": {
+    "state": "READY",
+    "evidence_state": "FINAL",
+    "criterion_vector": [
+      "SATISFIED",
+      "SATISFIED"
+    ],
+    "criterion_results": {
+      "approval_date": "SATISFIED",
+      "law_number": "SATISFIED"
+    },
+    "evidence_refs": [
+      "0"
+    ],
     "source_coverage": 1,
-    "spec_id": "readiness-gate-pl117-58-v1",
-    "state": "READY"
+    "official_event_time": "2021-11-15",
+    "reason_code": "EVIDENCE_FINAL"
+  },
+  "assessment_readback": {
+    "state": "READY",
+    "evidence_state": "FINAL",
+    "criterion_results": {
+      "approval_date": "SATISFIED",
+      "law_number": "SATISFIED"
+    },
+    "criterion_vector": [
+      "SATISFIED",
+      "SATISFIED"
+    ],
+    "evidence_refs": [
+      "0"
+    ],
+    "source_coverage": 1,
+    "official_event_time": "2021-11-15",
+    "reason_code": "EVIDENCE_FINAL",
+    "assessment_id": "readiness-gate-pl117-58-v2:1",
+    "assessment_version": 1,
+    "attempts": 1
+  },
+  "consumer_request_transaction": "0x226ef2652134dd513c1dc397699bdbbb348b772f45a8eb4902fb1915bfc3b541",
+  "consumer_request_explorer_url": "https://explorer-studio.genlayer.com/transactions/0x226ef2652134dd513c1dc397699bdbbb348b772f45a8eb4902fb1915bfc3b541",
+  "consumer_request_status": "FINALIZED",
+  "consumer_request_execution": "SUCCESS",
+  "consumer_request_consensus_result": "MAJORITY_AGREE",
+  "consumer_request_validator_votes": [
+    "AGREE",
+    "AGREE",
+    "AGREE",
+    "IDLE",
+    "IDLE"
+  ],
+  "gate_consume_transaction": "0x9f6adf4f5e55b427b6fe7fb63d327d3bb49a3d4ae096b897a7a521667db3b652",
+  "gate_consume_explorer_url": "https://explorer-studio.genlayer.com/transactions/0x9f6adf4f5e55b427b6fe7fb63d327d3bb49a3d4ae096b897a7a521667db3b652",
+  "gate_consume_status": "FINALIZED",
+  "gate_consume_execution": "SUCCESS",
+  "gate_consume_consensus_result": "MAJORITY_AGREE",
+  "gate_consume_validator_votes": [
+    "AGREE",
+    "AGREE",
+    "AGREE",
+    "IDLE",
+    "IDLE"
+  ],
+  "consumer_callback_transaction": "0x2871c6bfd940a5eb2ab2bb2379dc81abb48557894c82d57553fa7eeead691a9a",
+  "consumer_callback_explorer_url": "https://explorer-studio.genlayer.com/transactions/0x2871c6bfd940a5eb2ab2bb2379dc81abb48557894c82d57553fa7eeead691a9a",
+  "consumer_callback_status": "FINALIZED",
+  "consumer_callback_execution": "SUCCESS",
+  "consumer_callback_consensus_result": "MAJORITY_AGREE",
+  "consumer_callback_validator_votes": [
+    "AGREE",
+    "AGREE",
+    "AGREE",
+    "AGREE",
+    "AGREE"
+  ],
+  "consumer_callback_proof": {
+    "gate_address": "0xa8be5185b1fa8f4ae2cadf924a5f5dbcd429fbb5",
+    "assessment_id": "readiness-gate-pl117-58-v2:1",
+    "assessment_version": 1,
+    "spec_id": "readiness-gate-pl117-58-v2",
+    "spec_hash": "06567a2138973c3caf4ffe16f363ce63497db9143a31a47fd75b6f4cc043d45e",
+    "action_id": "settle-market-pl117-58-demo",
+    "action_digest": "cc988093ac001cbbbb08731880b59aeed72f781b0a25311b60c49ce05a38ba4a",
+    "consumed": true,
+    "callback": "FINALIZED"
+  },
+  "readback": {
+    "gate_state": {
+      "state": "READY",
+      "evidence_state": "FINAL",
+      "criterion_results": {
+        "approval_date": "SATISFIED",
+        "law_number": "SATISFIED"
+      },
+      "criterion_vector": [
+        "SATISFIED",
+        "SATISFIED"
+      ],
+      "evidence_refs": [
+        "0"
+      ],
+      "source_coverage": 1,
+      "official_event_time": "2021-11-15",
+      "reason_code": "EVIDENCE_FINAL",
+      "assessment_id": "readiness-gate-pl117-58-v2:1",
+      "assessment_version": 1,
+      "attempts": 1,
+      "consumer_bound": true,
+      "authorized_consumer": "0x2394879de943F3E89BD18d9e48991cD543786954",
+      "ready_consumed": true,
+      "action_queued": true,
+      "can_consume": false,
+      "consumed_at": "2026-09-14T12:24:48.941757+00:00",
+      "cutoff": "2026-09-01T00:00:00+00:00",
+      "readiness_expiry": "2026-12-01T00:00:00+00:00",
+      "max_wait": "2027-01-01T00:00:00+00:00"
+    },
+    "consumer_state": {
+      "executed": true,
+      "execution_count": 1,
+      "request_count": 1,
+      "gate_address": "0xa8be5185b1fa8f4ae2cadf924a5f5dbcd429fbb5",
+      "spec_id": "readiness-gate-pl117-58-v2",
+      "action_id": "settle-market-pl117-58-demo"
+    }
+  },
+  "evidence_sources": [
+    {
+      "url": "https://www.govinfo.gov/app/details/PLAW-117publ58/summary",
+      "title": "GovInfo: Public Law 117-58",
+      "role": "authoritative public source",
+      "accessibility_verified": true,
+      "interpretation": "The official record identifies Public Law 117-58 and approval date 2021-11-15."
+    }
+  ],
+  "verification": {
+    "verified_date_utc": "2026-09-14",
+    "method": "read-only RPC/CLI receipt, state, schema, and deployed-source checks",
+    "protocol_finality_verified": true,
+    "execution_success_verified": true,
+    "source_identity_verified": true,
+    "bytecode_identity_verified": false,
+    "public_links_verified": {
+      "explorer_and_evidence": true,
+      "github_repository_and_files": false,
+      "github_note": "Anonymous HEAD checks returned 404 before publication recheck."
+    }
   }
 }

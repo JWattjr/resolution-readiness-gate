@@ -1,4 +1,10 @@
 {
+  "historical": true,
+  "historical_label": "Pre-authorization-hardening Bradbury deployment",
+  "superseded_by": "deployments/studionet.json",
+  "source_revision": "pre-authorization-hardening",
+  "submission_status": "historical_only",
+  "historical_note": "Preserved for audit context. This source predates the bound-consumer release and is not current submission proof.",
   "contract": "ResolutionReadinessGate",
   "network": "testnet-bradbury",
   "chain_id": 4221,

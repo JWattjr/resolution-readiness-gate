@@ -1,0 +1,84 @@
+{
+  "historical": true,
+  "historical_label": "Pre-authorization-hardening StudioNet deployment",
+  "superseded_by": "deployments/studionet.json",
+  "source_revision": "pre-authorization-hardening",
+  "verification_note": "Independently verified by read-only RPC on 2026-09-14. This receipt predates the bound-consumer release and is not current submission proof.",
+  "contract": "ResolutionReadinessGate",
+  "network": "studionet",
+  "chain_id": 61999,
+  "deployer": "0x2C8EB5dB1105A85BE66BadafeD88D10cF393CDD8",
+  "source_file": "contracts/ResolutionReadinessGate.py",
+  "source_commit": "58855ec2cc18ff95ca4f65e627a9e287adff8dda",
+  "contract_address": "0x76A7141d99e5abbDB737BFE672001F429bF654B7",
+  "deployment_transaction": "0x786d891a1371cb606a0f8376ac8b6fa7ec06279afb8b053c48bf6a70299f2556",
+  "explorer_url": "https://explorer-studio.genlayer.com/contracts/0x76A7141d99e5abbDB737BFE672001F429bF654B7",
+  "deployment_explorer_url": "https://explorer-studio.genlayer.com/transactions/0x786d891a1371cb606a0f8376ac8b6fa7ec06279afb8b053c48bf6a70299f2556",
+  "runner": "py-genlayer:1jb45aa8ynh2a9c9xn3b7qqh8sm5q93hwfp7jqmwsfhh8jpz09h6",
+  "constructor_args": [
+    "pl117-58-readiness",
+    "The final official legal status of H.R. 3684 in the 117th Congress",
+    "[{\"id\":\"law_number\",\"text\":\"The official record assigns Public Law 117-58.\"},{\"id\":\"approval_date\",\"text\":\"The official record supplies a final approval date.\"}]",
+    "[\"https://www.govinfo.gov/app/details/PLAW-117publ58/summary\"]",
+    "2026-01-01T00:00:00Z",
+    "2030-01-01T00:00:00Z",
+    "readiness-gate-pl117-58-v1"
+  ],
+  "deployment_status": "FINALIZED",
+  "deployment_execution": "SUCCESS",
+  "deployment_consensus_result": "MAJORITY_AGREE",
+  "deployment_validator_votes": [
+    "AGREE",
+    "AGREE",
+    "AGREE",
+    "AGREE",
+    "AGREE"
+  ],
+  "deployment_finality_verified": true,
+  "deployment_execution_verified": true,
+  "schema_verified": true,
+  "source_identity_verified": true,
+  "source_identity_note": "gen_getContractCode matched the historical source commit byte-for-byte; this does not identify the current source.",
+  "consensus_test_transaction": "0xd3403615a643cea5a06a679630002ed8001b45cee1fbe61f7a505d51f7947981",
+  "consensus_test_explorer_url": "https://explorer-studio.genlayer.com/transactions/0xd3403615a643cea5a06a679630002ed8001b45cee1fbe61f7a505d51f7947981",
+  "consensus_test_status": "FINALIZED",
+  "consensus_test_execution": "SUCCESS",
+  "consensus_test_consensus_result": "MAJORITY_AGREE",
+  "consensus_test_validator_votes": [
+    "AGREE",
+    "AGREE",
+    "AGREE",
+    "AGREE",
+    "AGREE"
+  ],
+  "consensus_test_state": {
+    "attempts": 1,
+    "criterion_vector": [
+      "SATISFIED",
+      "SATISFIED"
+    ],
+    "cutoff": "2026-01-01T00:00:00+00:00",
+    "event_description": "The final official legal status of H.R. 3684 in the 117th Congress",
+    "gate_id": "pl117-58-readiness",
+    "last_assessed_at": "2026-08-12T21:13:39.465935Z",
+    "last_result": {
+      "criterion_vector": [
+        "SATISFIED",
+        "SATISFIED"
+      ],
+      "decision": "READY",
+      "official_event_time": "2021-11-15",
+      "reason_code": "EVIDENCE_FINAL",
+      "source_coverage": 1
+    },
+    "max_wait": "2030-01-01T00:00:00+00:00",
+    "official_event_time": "2021-11-15",
+    "ready_consumed": false,
+    "reason_code": "EVIDENCE_FINAL",
+    "source_count": 1,
+    "source_coverage": 1,
+    "spec_id": "readiness-gate-pl117-58-v1",
+    "state": "READY"
+  },
+  "historical_verification_date_utc": "2026-09-14"
+}

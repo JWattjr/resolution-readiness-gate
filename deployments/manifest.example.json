@@ -1,21 +1,49 @@
 {
+  "manifest_version": 2,
+  "historical": false,
   "contract": "ResolutionReadinessGate",
   "source_file": "contracts/ResolutionReadinessGate.py",
   "source_commit": "REPLACE_WITH_GIT_COMMIT",
-  "network": "testnet-bradbury",
-  "chain_id": 4221,
-  "contract_address": "REPLACE_WITH_ADDRESS",
-  "deployment_transaction": "REPLACE_WITH_TX_HASH",
-  "explorer_url": "https://explorer-bradbury.genlayer.com/address/REPLACE_WITH_ADDRESS",
+  "network": "studionet",
+  "chain_id": 61999,
+  "contract_address": "REPLACE_WITH_GATE_ADDRESS",
+  "deployment_transaction": "REPLACE_WITH_GATE_TX_HASH",
+  "explorer_url": "https://explorer-studio.genlayer.com/contracts/REPLACE_WITH_GATE_ADDRESS",
   "constructor_args": [
-    "pl117-58-readiness",
-    "The final official legal status of H.R. 3684 in the 117th Congress",
-    "[{\"id\":\"law_number\",\"text\":\"The official record assigns Public Law 117-58.\"},{\"id\":\"approval_date\",\"text\":\"The official record supplies a final approval date.\"}]",
-    "[\"https://www.govinfo.gov/app/details/PLAW-117publ58/summary\"]",
-    "2026-01-01T00:00:00Z",
-    "2030-01-01T00:00:00Z",
-    "readiness-gate-pl117-58-v1"
+    "REPLACE_GATE_ID",
+    "REPLACE_EVENT_DESCRIPTION",
+    "REPLACE_CRITERIA_JSON",
+    "REPLACE_SOURCE_URLS_JSON",
+    "REPLACE_CUTOFF_ISO",
+    "REPLACE_MAX_WAIT_ISO",
+    "REPLACE_READINESS_EXPIRY_ISO",
+    "REPLACE_SPEC_ID",
+    "REPLACE_SPEC_SHA256",
+    "REPLACE_ACTION_ID",
+    "REPLACE_ACTION_SHA256"
   ],
+  "consumer": {
+    "contract": "ResolutionReadinessConsumer",
+    "source_file": "contracts/ResolutionReadinessConsumer.py",
+    "source_commit": "REPLACE_WITH_GIT_COMMIT",
+    "contract_address": "REPLACE_WITH_CONSUMER_ADDRESS",
+    "deployment_transaction": "REPLACE_WITH_CONSUMER_TX_HASH",
+    "explorer_url": "https://explorer-studio.genlayer.com/contracts/REPLACE_WITH_CONSUMER_ADDRESS",
+    "constructor_args": [
+      "REPLACE_CONSUMER_ID",
+      "REPLACE_WITH_GATE_ADDRESS",
+      "REPLACE_SPEC_ID",
+      "REPLACE_SPEC_SHA256",
+      "REPLACE_ACTION_ID",
+      "REPLACE_ACTION_SHA256"
+    ]
+  },
   "runner": "py-genlayer:1jb45aa8ynh2a9c9xn3b7qqh8sm5q93hwfp7jqmwsfhh8jpz09h6",
-  "deployed_at_utc": "REPLACE_WITH_ISO_TIMESTAMP"
+  "deployed_at_utc": "REPLACE_WITH_ISO_TIMESTAMP",
+  "verification": {
+    "protocol_finality_verified": false,
+    "execution_success_verified": false,
+    "source_identity_verified": false,
+    "bytecode_identity_verified": false
+  }
 }
