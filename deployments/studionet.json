@@ -275,8 +275,8 @@
     "bytecode_identity_verified": false,
     "public_links_verified": {
       "explorer_and_evidence": true,
-      "github_repository_and_files": false,
-      "github_note": "Source was pushed to origin/main, but anonymous HEAD checks on 2026-09-14 still returned 404 for the repository and every GitHub evidence URL; repository visibility/access remains pending."
+      "github_repository_and_files": true,
+      "github_note": "Anonymous GET checks on 2026-09-14 returned 200 for the repository, both contract sources, tests, audit, test matrix, security model, current manifest, and deployed-source commit."
     }
   }
 }
