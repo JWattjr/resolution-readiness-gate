@@ -37,7 +37,9 @@ records and must not be presented as current deployment proof.
 
 ## Submission gate
 
-Before submitting, verify the repository and every GitHub file/commit URL
-anonymously. A 200 response alone does not prove a transaction succeeded; use
-the current manifest's separate protocol-finality and execution fields. If the
-repository still returns 404, publication is the exact remaining blocker.
+Post-push anonymous HEAD checks on 2026-09-14 returned 404 for the repository
+and every GitHub file/commit URL. Make the repository publicly readable (or
+provide an anonymous read URL), then re-run the checks before Portal submission.
+A 200 response alone does not prove a transaction succeeded; use the current
+manifest's separate protocol-finality and execution fields. Repository
+visibility is the exact remaining blocker.

@@ -276,7 +276,7 @@
     "public_links_verified": {
       "explorer_and_evidence": true,
       "github_repository_and_files": false,
-      "github_note": "Anonymous HEAD checks returned 404 before publication recheck."
+      "github_note": "Source was pushed to origin/main, but anonymous HEAD checks on 2026-09-14 still returned 404 for the repository and every GitHub evidence URL; repository visibility/access remains pending."
     }
   }
 }
